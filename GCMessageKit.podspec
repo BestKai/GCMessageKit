@@ -12,12 +12,12 @@ Pod::Spec.new do |s|
   s.frameworks   = 'UIKit','Foundation'
   s.requires_arc = true
   
-  s.dependency =	'YYWebImage'
-  s.dependency =	'YYText'
-  s.dependency =	'AMap2DMap'
-  s.dependency =	'AMapSearch'
-  s.dependency =	'YAssetsPicker'
-  s.dependency =	'SVProgressHUD'
+  s.dependency 'YYWebImage'
+  s.dependency 'YYText'
+  s.dependency 'AMap2DMap'
+  s.dependency 'AMapSearch'
+  s.dependency 'YAssetsPicker'
+  s.dependency 'SVProgressHUD'
 
 
 end
