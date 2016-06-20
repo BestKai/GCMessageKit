@@ -1,0 +1,1 @@
+../../../YAssetsPicker/YAssetsPicker/YImagePickerNavController.h

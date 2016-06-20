@@ -1,0 +1,39 @@
+PODS:
+  - AMap2DMap (4.0.0):
+    - AMapFoundation (= 1.0.0)
+  - AMapFoundation (1.0.0)
+  - AMapSearch (4.0.0):
+    - AMapFoundation (= 1.0.0)
+  - SVProgressHUD (2.0.3)
+  - YAssetsPicker (0.0.1)
+  - YYCache (1.0.3)
+  - YYImage (1.0.2):
+    - YYImage/Core (= 1.0.2)
+  - YYImage/Core (1.0.2)
+  - YYText (1.0.5)
+  - YYWebImage (1.0.4):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AMap2DMap
+  - AMapSearch
+  - SVProgressHUD
+  - YAssetsPicker
+  - YYText
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  AMap2DMap: 72868a24c1a7c70f86729a4dfb4e4c2dc301f727
+  AMapFoundation: af861f5d299a4f17a1a8b50fd91242933bb352f3
+  AMapSearch: 867e89123c927436713372803156ac9848d9868a
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  YAssetsPicker: 89956030331d962fda1cf76a21887d6bc38bd911
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
+  YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae
+  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
+
+PODFILE CHECKSUM: e99b7a61fd2490c3885d458e5ce09c2a66e3a1e5
+
+COCOAPODS: 1.0.1

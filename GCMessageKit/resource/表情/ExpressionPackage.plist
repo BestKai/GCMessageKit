@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>[微笑]</key>
+		<string>微笑</string>
+	</dict>
+	<dict>
+		<key>[开心]</key>
+		<string>开心</string>
+	</dict>
+	<dict>
+		<key>[可爱]</key>
+		<string>可爱</string>
+	</dict>
+	<dict>
+		<key>[大笑]</key>
+		<string>大笑</string>
+	</dict>
+	<dict>
+		<key>[偷笑]</key>
+		<string>偷笑</string>
+	</dict>
+	<dict>
+		<key>[调皮]</key>
+		<string>调皮</string>
+	</dict>
+<dict>
+		<key>[哭]</key>
+		<string>哭</string>
+	</dict>
+	<dict>
+		<key>[困]</key>
+		<string>困</string>
+	</dict>
+	<dict>
+		<key>[石化]</key>
+		<string>石化</string>
+	</dict>
+	<dict>
+		<key>[睡觉]</key>
+		<string>睡觉</string>
+	</dict>
+	<dict>
+		<key>[委屈]</key>
+		<string>委屈</string>
+	</dict>
+
+<dict>
+		<key>[捡钱乐]</key>
+		<string>捡钱呀开</string>
+	</dict>
+	<dict>
+		<key>[亲亲]</key>
+		<string>亲亲</string>
+	</dict>
+	<dict>
+		<key>[色]</key>
+		<string>色</string>
+	</dict>
+	<dict>
+		<key>[笑哭了]</key>
+		<string>笑哭了</string>
+	</dict>
+	<dict>
+		<key>[害羞]</key>
+		<string>害羞</string>
+	</dict>
+	<dict>
+		<key>[闭嘴]</key>
+		<string>闭嘴</string>
+	</dict>
+	<dict>
+		<key>[疑惑]</key>
+		<string>疑惑</string>
+	</dict>
+<dict>
+		<key>[晕]</key>
+		<string>晕</string>
+	</dict>
+	<dict>
+		<key>[吐]</key>
+		<string>吐</string>
+	</dict>
+	<dict>
+		<key>[吓]</key>
+		<string>吓</string>
+	</dict>
+	<dict>
+		<key>[炸毛了]</key>
+		<string>炸毛了</string>
+	</dict>
+	<dict>
+		<key>[怒]</key>
+		<string>怒</string>
+	</dict>
+
+
+
+		<dict>
+		<key>[呆]</key>
+		<string>呆</string>
+	</dict>
+	<dict>
+		<key>[得意]</key>
+		<string>得意</string>
+	</dict>
+	<dict>
+		<key>[汗]</key>
+		<string>汗</string>
+	</dict>
+	<dict>
+		<key>[黑线]</key>
+		<string>黑线</string>
+	</dict>
+	<dict>
+		<key>[哼]</key>
+		<string>哼</string>
+	</dict>
+<dict>
+		<key>[纠结]</key>
+		<string>纠结</string>
+	</dict>
+<dict>
+		<key>delete</key>
+		<string>compose_emotion_delete</string>
+	</dict>
+	
+
+	
+	<dict>
+		<key>[献花]</key>
+		<string>献花</string>
+	</dict>
+	<dict>
+		<key>[奋]</key>
+		<string>奋</string>
+	</dict>
+	<dict>
+		<key>[斗]</key>
+		<string>斗</string>
+	</dict>
+	<dict>
+		<key>[帅]</key>
+		<string>帅</string>
+	</dict>
+	<dict>
+		<key>[大白]</key>
+		<string>大白</string>
+	</dict>
+	
+	<dict>
+		<key>delete</key>
+		<string>compose_emotion_delete</string>
+	</dict>
+</array>
+</plist>
