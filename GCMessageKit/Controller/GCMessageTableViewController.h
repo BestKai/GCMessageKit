@@ -20,7 +20,6 @@
 #import "GCOtherMessageInputView.h"
 #import "GCTakePhotographHelper.h"
 #import "YImagePickerNavController.h"
-#import "GCDisplayLocationViewController.h"
 
 #import "GCVoiceRecordHelper.h"
 #import "GCAddressBookHelper.h"

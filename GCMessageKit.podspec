@@ -14,8 +14,6 @@ Pod::Spec.new do |s|
   
   s.dependency 'YYWebImage'
   s.dependency 'YYText'
-  s.dependency 'AMap2DMap'
-  s.dependency 'AMapSearch'
   s.dependency 'YAssetsPicker'
   s.dependency 'SVProgressHUD'
 

@@ -25,7 +25,6 @@
 		E2C13AC71D1775C500EDE287 /* GCPhotoMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F31D1775C400EDE287 /* GCPhotoMessageHelper.m */; };
 		E2C13AC81D1775C500EDE287 /* GCTakePhotographHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F51D1775C400EDE287 /* GCTakePhotographHelper.m */; };
 		E2C13AC91D1775C500EDE287 /* GCVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F71D1775C400EDE287 /* GCVoiceRecordHelper.m */; };
-		E2C13ACA1D1775C500EDE287 /* GCDisplayLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139FA1D1775C400EDE287 /* GCDisplayLocationViewController.m */; };
 		E2C13ACB1D1775C500EDE287 /* GCDisplayMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139FC1D1775C400EDE287 /* GCDisplayMediaViewController.m */; };
 		E2C13ACC1D1775C500EDE287 /* GCDisplayTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139FE1D1775C400EDE287 /* GCDisplayTextViewController.m */; };
 		E2C13ACD1D1775C500EDE287 /* GCMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C13A001D1775C400EDE287 /* GCMessageTableViewController.m */; };
@@ -187,6 +186,8 @@
 		E2C13B6A1D1775C500EDE287 /* 黑线@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C13ABD1D1775C500EDE287 /* 黑线@3x.png */; };
 		E2C13B6D1D17827300EDE287 /* UIView+GCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C13B6C1D17827300EDE287 /* UIView+GCAdd.m */; };
 		E2C13BC01D179FE800EDE287 /* GCMessageDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C13BBF1D179FE800EDE287 /* GCMessageDemoViewController.m */; };
+		E2C13BC21D17D57700EDE287 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C13BC11D17D57700EDE287 /* CoreLocation.framework */; };
+		E2C13BC51D17E91000EDE287 /* MKMapView+Zoomlevel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C13BC41D17E91000EDE287 /* MKMapView+Zoomlevel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,8 +226,6 @@
 		E2C139F51D1775C400EDE287 /* GCTakePhotographHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTakePhotographHelper.m; sourceTree = "<group>"; };
 		E2C139F61D1775C400EDE287 /* GCVoiceRecordHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCVoiceRecordHelper.h; sourceTree = "<group>"; };
 		E2C139F71D1775C400EDE287 /* GCVoiceRecordHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCVoiceRecordHelper.m; sourceTree = "<group>"; };
-		E2C139F91D1775C400EDE287 /* GCDisplayLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDisplayLocationViewController.h; sourceTree = "<group>"; };
-		E2C139FA1D1775C400EDE287 /* GCDisplayLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDisplayLocationViewController.m; sourceTree = "<group>"; };
 		E2C139FB1D1775C400EDE287 /* GCDisplayMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDisplayMediaViewController.h; sourceTree = "<group>"; };
 		E2C139FC1D1775C400EDE287 /* GCDisplayMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDisplayMediaViewController.m; sourceTree = "<group>"; };
 		E2C139FD1D1775C400EDE287 /* GCDisplayTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDisplayTextViewController.h; sourceTree = "<group>"; };
@@ -416,6 +415,9 @@
 		E2C13BBD1D1799E000EDE287 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E2C13BBE1D179FE800EDE287 /* GCMessageDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageDemoViewController.h; sourceTree = "<group>"; };
 		E2C13BBF1D179FE800EDE287 /* GCMessageDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageDemoViewController.m; sourceTree = "<group>"; };
+		E2C13BC11D17D57700EDE287 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E2C13BC31D17E91000EDE287 /* MKMapView+Zoomlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoomlevel.h"; sourceTree = "<group>"; };
+		E2C13BC41D17E91000EDE287 /* MKMapView+Zoomlevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoomlevel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C13BC21D17D57700EDE287 /* CoreLocation.framework in Frameworks */,
 				1CDBE0287AFABFC6691C4A74 /* libPods-GCMessageKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +436,7 @@
 		087805F011D1BB0AB46793ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2C13BC11D17D57700EDE287 /* CoreLocation.framework */,
 				74AF426EAFCBC5871B9C8CB4 /* libPods-GCMessageKitDemo.a */,
 			);
 			name = Frameworks;
@@ -522,6 +526,8 @@
 				E2C139E61D1775C400EDE287 /* UIImage+Resize.m */,
 				E2C139E71D1775C400EDE287 /* UIImage+RoundedCorner.h */,
 				E2C139E81D1775C400EDE287 /* UIImage+RoundedCorner.m */,
+				E2C13BC31D17E91000EDE287 /* MKMapView+Zoomlevel.h */,
+				E2C13BC41D17E91000EDE287 /* MKMapView+Zoomlevel.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -550,8 +556,6 @@
 		E2C139F81D1775C400EDE287 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E2C139F91D1775C400EDE287 /* GCDisplayLocationViewController.h */,
-				E2C139FA1D1775C400EDE287 /* GCDisplayLocationViewController.m */,
 				E2C139FB1D1775C400EDE287 /* GCDisplayMediaViewController.h */,
 				E2C139FC1D1775C400EDE287 /* GCDisplayMediaViewController.m */,
 				E2C139FD1D1775C400EDE287 /* GCDisplayTextViewController.h */,
@@ -1071,6 +1075,7 @@
 				E2C13AD61D1775C500EDE287 /* WBVoiceRecordHUD.m in Sources */,
 				E2C13ADD1D1775C500EDE287 /* GCMessage.m in Sources */,
 				E2C13AC51D1775C500EDE287 /* GCMessageBubbleHelper.m in Sources */,
+				E2C13BC51D17E91000EDE287 /* MKMapView+Zoomlevel.m in Sources */,
 				E2C13AD31D1775C500EDE287 /* GCEmotionMangerView.m in Sources */,
 				E2C13AD21D1775C500EDE287 /* GCEmotionManager.m in Sources */,
 				E2C139CE1D1771B500EDE287 /* ViewController.m in Sources */,
@@ -1087,7 +1092,6 @@
 				E2C13ADF1D1775C500EDE287 /* GCHeaderContainerView.m in Sources */,
 				E2C13ACC1D1775C500EDE287 /* GCDisplayTextViewController.m in Sources */,
 				E2C13ADA1D1775C500EDE287 /* GCPhotoMessageTableViewCell.m in Sources */,
-				E2C13ACA1D1775C500EDE287 /* GCDisplayLocationViewController.m in Sources */,
 				E2C13AE31D1775C500EDE287 /* YYControl.m in Sources */,
 				E2C13AD11D1775C500EDE287 /* GCEmotionCollectionViewCell.m in Sources */,
 				E2C13AE21D1775C500EDE287 /* GCNameCardView.m in Sources */,

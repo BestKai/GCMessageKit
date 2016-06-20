@@ -16,6 +16,23 @@
     [super viewDidLoad];
 //    [self setBackgroundColor:[UIColor colorWithRed:243/255.0 green:243/255.0 blue:243/255.0 alpha:1.0]];
 
+    self.allowsSendMultiMedia = YES;
+    self.allowsSendVoice = YES;
+    
+    NSMutableArray *shareMenus = [[NSMutableArray alloc] init];
+    NSArray *plugIcons;
+    NSArray *plugTitle;
+    
+    plugIcons = @[@"sharemore_pic", @"sharemore_video",@"sharemore_location",@"sharemore_card"];
+    plugTitle = @[@"照片", @"拍摄",@"位置",@"名片"];
+    
+    for (NSString *plugIcon in plugIcons) {
+        GCOtherMenuItem *shareMenuItem = [[GCOtherMenuItem alloc] initWithNormalIconImage:[UIImage imageNamed:plugIcon] title:[plugTitle objectAtIndex:[plugIcons indexOfObject:plugIcon]]];
+        [shareMenus addObject:shareMenuItem];
+    }
+    
+    self.shareMenuItems = shareMenus;
+
     
     self.toImageUrl = @"http://tx.haiqq.com/qqtouxiang/uploads/2014-04-08/011438126.jpg";
     self.fromImageUrl = @"http://img.jiqie.com/11/6/1524mj.jpg";
@@ -227,9 +244,9 @@
             break;
         case GCMessageTypeLocation:
         {
-            GCDisplayLocationViewController *locationVC = [[GCDisplayLocationViewController alloc] init];
-//            locationVC.message = message;
-            disPlayViewController = locationVC;
+//            GCDisplayLocationViewController *locationVC = [[GCDisplayLocationViewController alloc] init];
+////            locationVC.message = message;
+//            disPlayViewController = locationVC;
         }
             break;
         case GCMessageTypeNameCard:
@@ -245,6 +262,27 @@
     if (disPlayViewController) {
         [self.navigationController pushViewController:disPlayViewController animated:YES];
     }
+}
+
+
+- (void)clickGetAddressView
+{
+//    GCDisplayLocationViewController *displayLocationViewController = [[GCDisplayLocationViewController alloc] init];
+//
+//    displayLocationViewController.needLocation = YES;
+//
+//    WEAKSELF
+//    displayLocationViewController.DidGetGeolocationsCompledBlock = ^(NSString *result,CLLocation *location)
+//    {
+//        if (result) {
+//            NSString *geoLocations = result;
+//            if (geoLocations) {
+//                [weakSelf didSendGeoLocationsPhoto:[UIImage imageNamed:@"Fav_Cell_Loc"] geolocations:result location:location fromSender:@"" onDate:[NSDate date]];
+//            }
+//        }
+//    };
+//    [self.navigationController pushViewController:displayLocationViewController animated:YES];
+
 }
 
 - (void)avatarImageViewTapped

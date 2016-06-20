@@ -361,24 +361,24 @@
     [self.imagePickerNavController showFirstAssetsController];
 }
 #pragma mark ----- 定位
-- (void)clickGetAddressView
-{
-    GCDisplayLocationViewController *displayLocationViewController = [[GCDisplayLocationViewController alloc] init];
-
-    displayLocationViewController.needLocation = YES;
-    
-    WEAKSELF
-    displayLocationViewController.DidGetGeolocationsCompledBlock = ^(NSString *result,CLLocation *location)
-    {
-        if (result) {
-            NSString *geoLocations = result;
-            if (geoLocations) {
-                [weakSelf didSendGeolocationsMessageWithGeolocaltions:geoLocations location:location];
-            }
-        }
-    };
-    [self.navigationController pushViewController:displayLocationViewController animated:YES];
-}
+//- (void)clickGetAddressView
+//{
+//    GCDisplayLocationViewController *displayLocationViewController = [[GCDisplayLocationViewController alloc] init];
+//
+//    displayLocationViewController.needLocation = YES;
+//    
+//    WEAKSELF
+//    displayLocationViewController.DidGetGeolocationsCompledBlock = ^(NSString *result,CLLocation *location)
+//    {
+//        if (result) {
+//            NSString *geoLocations = result;
+//            if (geoLocations) {
+//                [weakSelf didSendGeolocationsMessageWithGeolocaltions:geoLocations location:location];
+//            }
+//        }
+//    };
+//    [self.navigationController pushViewController:displayLocationViewController animated:YES];
+//}
 
 #pragma mark ----- 名片
 - (void)clickOpenBusinessCardView
