@@ -280,7 +280,7 @@
         
     if (_selectedPhotoArr.count == self.maxSelectNumber && !model.selected) {
         
-        [[[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"你最多只能选择%ld张图片",(unsigned long)self.maxSelectNumber] delegate:self cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil] show];
+        [[[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"你最多只能选择%zd张图片",self.maxSelectNumber] delegate:self cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil] show];
         
         return;
     }
@@ -323,7 +323,7 @@
     
     if (self.selectedPhotoArr.count) {
         
-        [_okButton setTitle:[NSString stringWithFormat:@"完成（%ld）",(unsigned long)_selectedPhotoArr.count] forState:UIControlStateNormal];
+        [_okButton setTitle:[NSString stringWithFormat:@"完成（%zd）",_selectedPhotoArr.count] forState:UIControlStateNormal];
     }else
     {
         [_okButton setTitle:@"完成" forState:UIControlStateNormal];
@@ -435,7 +435,7 @@
     indexLabel.text = [NSString stringWithFormat:@"%zd / %zd", _currentIndex + 1,_photoArr.count];
     
     if (self.selectedPhotoArr.count) {
-        [_okButton setTitle:[NSString stringWithFormat:@"完成（%ld）",(unsigned long)_selectedPhotoArr.count] forState:UIControlStateNormal];
+        [_okButton setTitle:[NSString stringWithFormat:@"完成（%zd）",(unsigned long)_selectedPhotoArr.count] forState:UIControlStateNormal];
     }else
     {
         [_okButton setTitle:@"完成" forState:UIControlStateNormal];

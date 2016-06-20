@@ -1,1 +1,1 @@
-../../../YAssetsPicker/YAssetsPicker/Category/UIView+GCAdd.h
+../../../YAssetsPicker/YAssetsPicker/UIView+GCAdd.h

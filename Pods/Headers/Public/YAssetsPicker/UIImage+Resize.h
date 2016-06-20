@@ -1,1 +1,1 @@
-../../../YAssetsPicker/YAssetsPicker/Category/UIImage+Resize.h
+../../../YAssetsPicker/YAssetsPicker/UIImage+Resize.h

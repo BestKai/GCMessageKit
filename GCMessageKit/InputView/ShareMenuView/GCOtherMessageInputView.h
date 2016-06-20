@@ -12,6 +12,7 @@
 
 @protocol GCOtherMessageInputViewDelegate <NSObject>
 
+@optional
 //表情
 - (void)sendSelectedEmotion:(GCEmotion *)emotion;
 

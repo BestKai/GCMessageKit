@@ -1,21 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AMap2DMap
-
-Copyright © 2014 AutoNavi. All Rights Reserved.
-
-
-## AMapFoundation
-
-Copyright © 2014 AutoNavi. All Rights Reserved.
-
-
-## AMapSearch
-
-Copyright © 2014 AutoNavi. All Rights Reserved.
-
-
 ## SVProgressHUD
 
 Copyright (c) 2011-2016 Sam Vermette, Tobias Tiemerding and contributors.
