@@ -9,9 +9,15 @@ Pod::Spec.new do |s|
   s.platform     =  :ios, '7.0'
   s.source       =  { git: 'https://github.com/BestKai/GCMessageKit.git', :tag => s.version }
   s.source_files = 'GCMessageKit/**/*.{h,m}'
-  s.frameworks   =  'UIKit','Foundation'
+  s.frameworks   = 'UIKit','Foundation'
   s.requires_arc = true
   
-  s.dependencies =  "YYWebImage","YYText","AMap2DMap","AMapSearch","YAssetsPicker","SVProgressHUD"
+  s.dependency =	'YYWebImage'
+  s.dependency =	'YYText'
+  s.dependency =	'AMap2DMap'
+  s.dependency =	'AMapSearch'
+  s.dependency =	'YAssetsPicker'
+  s.dependency =	'SVProgressHUD'
+
 
 end
