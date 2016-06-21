@@ -34,6 +34,7 @@ Pod::Spec.new do |s|
 
        ss.subspec 'ShareMenuView' do |sss|
        sss.source_files = 'GCMessageKit/InputView/ShareMenuView/*'
+       sss.dependency 'GCMessageKit/Macro'
        end
 
        ss.subspec 'VoiceRecord' do |sss|
@@ -54,7 +55,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'MessageModel' do |ss|
     ss.source_files = 'GCMessageKit/MessageModel/*'
-    ss.dependency 'GCMessageKit/CommonHelper'
+    ss.dependency 'GCMessageKit/InputView/ShareMenuView'
     ss.dependency 'GCMessageKit/Macro'
     end
 
