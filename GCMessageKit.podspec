@@ -8,7 +8,41 @@ Pod::Spec.new do |s|
 
   s.platform     =  :ios, '7.0'
   s.source       =  { git: 'https://github.com/BestKai/GCMessageKit.git', :tag => s.version }
-  s.source_files = 'GCMessageKit/**/*.{h,m}'
+
+
+  s.subspec 'Category' do |ss|
+  ss.source_files = 'GCMessageKit/Category/*.{h,m}'
+  ss.frameworks = 'MapKit'
+  end
+
+    s.subspec 'CommonHelper' do |ss|
+    ss.source_files = 'GCMessageKit/CommonHelper/*.{h,m}'
+    ss.frameworks = 'AddressBook','AddressBookUI','Contacts','ContactsUI','AVFoundation'
+    end
+
+
+    s.subspec 'Controller' do |ss|
+    ss.source_files = 'GCMessageKit/Controller/*.{h,m}'
+    ss.frameworks = 'MediaPlayer'
+    end
+
+    s.subspec 'InputView' do |ss|
+    ss.source_files = 'GCMessageKit/InputView/*.{h,m}'
+    end
+
+    s.subspec 'Macro' do |ss|
+    ss.source_files = 'GCMessageKit/Macro/*.{h,m}'
+    end
+
+    s.subspec 'MessageCell' do |ss|
+    ss.source_files = 'GCMessageKit/MessageCell/*.{h,m}'
+    end
+
+    s.subspec 'ModelView' do |ss|
+    ss.source_files = 'GCMessageKit/ModelView/*.{h,m}'
+    end
+
+  s.resources = 'resource'
   s.frameworks   = 'UIKit','Foundation'
   s.requires_arc = true
   
