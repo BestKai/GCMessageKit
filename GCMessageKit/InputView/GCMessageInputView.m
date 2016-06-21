@@ -7,7 +7,6 @@
 //
 
 #import "GCMessageInputView.h"
-#import "YYControl.h"
 #import "GCEmotionMangerView.h"
 #import "GCMessageInputViewHelper.h"
 #import "WBVoiceRecordHUD.h"

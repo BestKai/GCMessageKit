@@ -107,7 +107,7 @@
     if (IOS9Later) {
         PHFetchOptions *option = [[PHFetchOptions alloc] init];
         
-        option.predicate = [NSPredicate predicateWithFormat:@"mediaType == %zd", PHAssetMediaTypeImage];
+        option.predicate = [NSPredicate predicateWithFormat:@"mediaType == %d", PHAssetMediaTypeImage];
         option.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
         
         PHAssetCollectionSubtype smartAlbumSubtype = PHAssetCollectionSubtypeSmartAlbumUserLibrary | PHAssetCollectionSubtypeSmartAlbumRecentlyAdded | PHAssetCollectionSubtypeSmartAlbumVideos;

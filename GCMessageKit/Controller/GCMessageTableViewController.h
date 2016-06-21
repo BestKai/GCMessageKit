@@ -19,10 +19,11 @@
 #import "GCMessageInputView.h"
 #import "GCOtherMessageInputView.h"
 #import "GCTakePhotographHelper.h"
-#import "YImagePickerNavController.h"
 
 #import "GCVoiceRecordHelper.h"
 #import "GCAddressBookHelper.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
 @protocol GCMessageTableViewControllerDelegate <NSObject>
 
 @optional 
@@ -129,7 +130,7 @@
 
 
 
-@interface GCMessageTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,GCMessageInputViewDelegate,YYTextKeyboardObserver,GCMessageTableViewControllerDelegate,YImageNavControllerDelegate,GCMessageTableCellDelegate,GCOtherMessageInputViewDelegate,GCSystemAddressBookViewControllerDelegate>
+@interface GCMessageTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,GCMessageInputViewDelegate,YYTextKeyboardObserver,GCMessageTableViewControllerDelegate,GCMessageTableCellDelegate,GCOtherMessageInputViewDelegate,GCSystemAddressBookViewControllerDelegate>
 
 @property (assign,nonatomic) id<GCMessageTableViewControllerDelegate>  delegate;
 

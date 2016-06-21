@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GCEmotion.h"
 
+@class GCEmotion;
 @protocol GCEmotionMangerViewDelegate <NSObject>
 
 - (void)didSelectedEmotion:(GCEmotion *)gcEmotion;

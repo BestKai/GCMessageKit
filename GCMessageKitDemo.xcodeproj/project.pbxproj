@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CDBE0287AFABFC6691C4A74 /* libPods-GCMessageKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AF426EAFCBC5871B9C8CB4 /* libPods-GCMessageKitDemo.a */; };
+		E264B8631D191FAE001798A1 /* GCMessageInputViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E264B8621D191FAE001798A1 /* GCMessageInputViewHelper.m */; };
 		E2C139C81D1771B500EDE287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139C71D1771B500EDE287 /* main.m */; };
 		E2C139CB1D1771B500EDE287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139CA1D1771B500EDE287 /* AppDelegate.m */; };
 		E2C139CE1D1771B500EDE287 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139CD1D1771B500EDE287 /* ViewController.m */; };
@@ -21,7 +22,6 @@
 		E2C13AC31D1775C500EDE287 /* GCAddressBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139EB1D1775C400EDE287 /* GCAddressBookHelper.m */; };
 		E2C13AC41D1775C500EDE287 /* GCAudioPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139ED1D1775C400EDE287 /* GCAudioPlayerHelper.m */; };
 		E2C13AC51D1775C500EDE287 /* GCMessageBubbleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139EF1D1775C400EDE287 /* GCMessageBubbleHelper.m */; };
-		E2C13AC61D1775C500EDE287 /* GCMessageInputViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F11D1775C400EDE287 /* GCMessageInputViewHelper.m */; };
 		E2C13AC71D1775C500EDE287 /* GCPhotoMessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F31D1775C400EDE287 /* GCPhotoMessageHelper.m */; };
 		E2C13AC81D1775C500EDE287 /* GCTakePhotographHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F51D1775C400EDE287 /* GCTakePhotographHelper.m */; };
 		E2C13AC91D1775C500EDE287 /* GCVoiceRecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C139F71D1775C400EDE287 /* GCVoiceRecordHelper.m */; };
@@ -194,6 +194,8 @@
 		1C2B4446DCBE557E3606DA26 /* Pods-GCMessageKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMessageKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCMessageKitDemo/Pods-GCMessageKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		74AF426EAFCBC5871B9C8CB4 /* libPods-GCMessageKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GCMessageKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD39F2514C08DAD6EF8BBCF6 /* Pods-GCMessageKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCMessageKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCMessageKitDemo/Pods-GCMessageKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E264B8611D191FAE001798A1 /* GCMessageInputViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageInputViewHelper.h; sourceTree = "<group>"; };
+		E264B8621D191FAE001798A1 /* GCMessageInputViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageInputViewHelper.m; sourceTree = "<group>"; };
 		E2C139C31D1771B500EDE287 /* GCMessageKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCMessageKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C139C71D1771B500EDE287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2C139C91D1771B500EDE287 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,8 +220,6 @@
 		E2C139ED1D1775C400EDE287 /* GCAudioPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAudioPlayerHelper.m; sourceTree = "<group>"; };
 		E2C139EE1D1775C400EDE287 /* GCMessageBubbleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageBubbleHelper.h; sourceTree = "<group>"; };
 		E2C139EF1D1775C400EDE287 /* GCMessageBubbleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageBubbleHelper.m; sourceTree = "<group>"; };
-		E2C139F01D1775C400EDE287 /* GCMessageInputViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMessageInputViewHelper.h; sourceTree = "<group>"; };
-		E2C139F11D1775C400EDE287 /* GCMessageInputViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMessageInputViewHelper.m; sourceTree = "<group>"; };
 		E2C139F21D1775C400EDE287 /* GCPhotoMessageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPhotoMessageHelper.h; sourceTree = "<group>"; };
 		E2C139F31D1775C400EDE287 /* GCPhotoMessageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPhotoMessageHelper.m; sourceTree = "<group>"; };
 		E2C139F41D1775C400EDE287 /* GCTakePhotographHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTakePhotographHelper.h; sourceTree = "<group>"; };
@@ -541,8 +541,6 @@
 				E2C139ED1D1775C400EDE287 /* GCAudioPlayerHelper.m */,
 				E2C139EE1D1775C400EDE287 /* GCMessageBubbleHelper.h */,
 				E2C139EF1D1775C400EDE287 /* GCMessageBubbleHelper.m */,
-				E2C139F01D1775C400EDE287 /* GCMessageInputViewHelper.h */,
-				E2C139F11D1775C400EDE287 /* GCMessageInputViewHelper.m */,
 				E2C139F21D1775C400EDE287 /* GCPhotoMessageHelper.h */,
 				E2C139F31D1775C400EDE287 /* GCPhotoMessageHelper.m */,
 				E2C139F41D1775C400EDE287 /* GCTakePhotographHelper.h */,
@@ -592,6 +590,8 @@
 				E2C13A101D1775C400EDE287 /* GCOtherMenuItem.m */,
 				E2C13A111D1775C400EDE287 /* GCOtherMessageInputView.h */,
 				E2C13A121D1775C400EDE287 /* GCOtherMessageInputView.m */,
+				E264B8611D191FAE001798A1 /* GCMessageInputViewHelper.h */,
+				E264B8621D191FAE001798A1 /* GCMessageInputViewHelper.m */,
 			);
 			path = ShareMenuView;
 			sourceTree = "<group>";
@@ -1066,6 +1066,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E264B8631D191FAE001798A1 /* GCMessageInputViewHelper.m in Sources */,
 				E2C13AC21D1775C500EDE287 /* UIImage+RoundedCorner.m in Sources */,
 				E2C13AC71D1775C500EDE287 /* GCPhotoMessageHelper.m in Sources */,
 				E2C13AD91D1775C500EDE287 /* GCNameCardMessageTableViewCell.m in Sources */,
@@ -1106,7 +1107,6 @@
 				E2C13AC81D1775C500EDE287 /* GCTakePhotographHelper.m in Sources */,
 				E2C13ACF1D1775C500EDE287 /* GCMessageInputView.m in Sources */,
 				E2C13B6D1D17827300EDE287 /* UIView+GCAdd.m in Sources */,
-				E2C13AC61D1775C500EDE287 /* GCMessageInputViewHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

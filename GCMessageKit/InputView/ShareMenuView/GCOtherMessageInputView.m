@@ -8,6 +8,9 @@
 
 #import "GCOtherMessageInputView.h"
 #import "GCMessageKitMacro.h"
+#import "GCEmotionMangerView.h"
+#import "GCOtherMenuItem.h"
+
 @interface GCOtherMessageInputView ()<GCEmotionMangerViewDelegate>{
     GCEmotionMangerView *emotionView;
 }

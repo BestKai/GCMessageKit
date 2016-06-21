@@ -9,6 +9,7 @@
 #import "GCEmotionMangerView.h"
 #import "GCEmotionCollectionViewCell.h"
 #import "GCMessageInputViewHelper.h"
+#import "GCEmotion.h"
 
 
 

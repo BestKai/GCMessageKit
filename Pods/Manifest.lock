@@ -1,6 +1,6 @@
 PODS:
   - SVProgressHUD (2.0.3)
-  - YAssetsPicker (0.0.3)
+  - YAssetsPicker (0.0.4)
   - YYCache (1.0.3)
   - YYImage (1.0.2):
     - YYImage/Core (= 1.0.2)
@@ -18,7 +18,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
-  YAssetsPicker: 95a4f7bef5b05ee893288ffcc2c257b8279e93a1
+  YAssetsPicker: a5a707cfd8fc8f5168b892c9de4c8670e1873f55
   YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
   YYImage: 2cc79ed49b9549b71c6715cefe7b0f5ab3d33abf
   YYText: ac09660c9ccd9b817f409a20caa6f5587444d2ae

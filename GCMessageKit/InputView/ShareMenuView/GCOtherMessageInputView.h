@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GCEmotionMangerView.h"
 #import "GCOtherMenuItem.h"
-
+@class GCEmotion;
 @protocol GCOtherMessageInputViewDelegate <NSObject>
 
 @optional

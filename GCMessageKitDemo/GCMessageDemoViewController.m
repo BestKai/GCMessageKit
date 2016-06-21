@@ -7,8 +7,24 @@
 //
 
 #import "GCMessageDemoViewController.h"
+#import "YImagePickerNavController.h"
+
+@interface GCMessageDemoViewController()<YImageNavControllerDelegate>
+
+@property (nonatomic,strong)YImagePickerNavController *imagePickerNavController;
+
+@end
 
 @implementation GCMessageDemoViewController
+
+- (YImagePickerNavController *)imagePickerNavController
+{
+    if (!_imagePickerNavController) {
+        _imagePickerNavController = [[YImagePickerNavController alloc] init];
+        _imagePickerNavController.navDelegate = self;
+    }
+    return _imagePickerNavController;
+}
 
 
 - (void)viewDidLoad
@@ -284,6 +300,60 @@
 //    [self.navigationController pushViewController:displayLocationViewController animated:YES];
 
 }
+
+
+- (void)clickToOpenAlbumView
+{
+    self.imagePickerNavController.maxSelectNumber = 9;
+
+    [self presentViewController:self.imagePickerNavController animated:YES completion:nil];
+
+    [self.imagePickerNavController showFirstAssetsController];
+}
+
+
+#pragma mark ----- YImagePickerNavControllerDelegate
+- (void)imagePickerNavController:(YImagePickerNavController *)navControlelr DidFinshed:(NSMutableArray *)selectedArray
+{
+    [SVProgressHUD showWithStatus:@"正在加载"];
+    if (selectedArray.count) {
+        
+        for (int i = 0; i< selectedArray.count; i++) {
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.01f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                YImageModel *photoa = selectedArray[i];
+                
+                [[YImageManager manager] getPhotoWithAsset:photoa.assets photoWidth:150 isSynchronous:YES completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+                    
+                    __block  UIImage *thuImage =photo;
+                    
+                    [[YImageManager manager] getPhotoWithAsset:photoa.assets photoWidth:[UIScreen mainScreen].bounds.size.width isSynchronous:YES completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
+                        
+                        UIImage *tempImage = photo;
+                        
+                        if (tempImage || thuImage) {
+                            NSArray *aa = [NSArray arrayWithObjects:tempImage?:thuImage,thuImage?:tempImage,nil];
+                            
+                            [self.delegate didSendPhoto:aa[0] thunmImage:aa[1] fromSender:@"" onDate:[NSDate date]];
+                        }
+                        
+                        if (i == selectedArray.count - 1) {
+                            
+                            [SVProgressHUD dismiss];
+                            
+                            [self dismissViewControllerAnimated:YES completion:nil];
+                        }
+                    }];
+                }];
+            });
+        }
+    }else
+    {
+        //        [SVProgressHUD dismiss];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
 
 - (void)avatarImageViewTapped
 {

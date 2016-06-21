@@ -78,10 +78,10 @@
         
         UIImage *image;
         if (message.bubbleMessageType == GCBubbleMessageTypeReceiving) {
-            image = [UIImage imageNamed:[NSString stringWithFormat:@"ReceiverVoiceNodePlaying00%ld",i+1]];
+            image = [UIImage imageNamed:[NSString stringWithFormat:@"ReceiverVoiceNodePlaying00%zd",i+1]];
         }else
         {
-            image = [UIImage imageNamed:[NSString stringWithFormat:@"SenderVoiceNodePlaying00%ld",i+1]];
+            image = [UIImage imageNamed:[NSString stringWithFormat:@"SenderVoiceNodePlaying00%zd",i+1]];
         }
         if (image)
             [images addObject:image];

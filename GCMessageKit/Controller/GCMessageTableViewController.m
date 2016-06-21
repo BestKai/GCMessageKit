@@ -9,7 +9,6 @@
 #import "GCMessageTableViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "GCMessageKitMacro.h"
-#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface GCMessageTableViewController ()
 {
@@ -27,8 +26,6 @@
 @property (nonatomic,strong)GCTakePhotographHelper *takePhotographHelper;
 
 @property (nonatomic,strong)GCOtherMessageInputView *otherMessageInputView;
-
-@property (nonatomic,strong)YImagePickerNavController *imagePickerNavController;
 
 @property (nonatomic,assign)GCInputViewType inputViewType;
 
@@ -120,15 +117,6 @@
         _addressBookHelper.delegate = self;
     }
     return _addressBookHelper;
-}
-
-- (YImagePickerNavController *)imagePickerNavController
-{
-    if (!_imagePickerNavController) {
-        _imagePickerNavController = [[YImagePickerNavController alloc] init];
-        _imagePickerNavController.navDelegate = self;
-    }
-    return _imagePickerNavController;
 }
 
 - (void)setLoadingMoreMessage:(BOOL)loadingMoreMessage
@@ -352,14 +340,14 @@
     }];
 }
 #pragma mark ----- 相册
-- (void)clickToOpenAlbumView
-{
-    self.imagePickerNavController.maxSelectNumber = 9;
-    
-    [self presentViewController:self.imagePickerNavController animated:YES completion:nil];
-    
-    [self.imagePickerNavController showFirstAssetsController];
-}
+//- (void)clickToOpenAlbumView
+//{
+//    self.imagePickerNavController.maxSelectNumber = 9;
+//    
+//    [self presentViewController:self.imagePickerNavController animated:YES completion:nil];
+//    
+//    [self.imagePickerNavController showFirstAssetsController];
+//}
 #pragma mark ----- 定位
 //- (void)clickGetAddressView
 //{
@@ -427,11 +415,8 @@
         
         [self.delegate didSendPhoto:images[0] thunmImage:images[1] fromSender:@"" onDate:[NSDate date]];
     }
-//    if ([self.delegate respondsToSelector:@selector(didSendMessages:fromSender:onDate:)]) {
-//        
-//        [self.delegate didSendMessages:images fromSender:@"" onDate:[NSDate date]];
-//    }
 }
+
 //视频
 - (void)didSendMessageWithVideoCoverPhto:(UIImage *)coverPhoto videoPath:(NSString *)videoPath videoDuration:(NSString *)videoDuration
 {
@@ -460,49 +445,6 @@
         [self.delegate didSendPersonWithName:person.name tel:person.phoneNumber headerImage:person.headerImage];
     }
 }
-
-#pragma mark ----- YImagePickerNavControllerDelegate
-- (void)imagePickerNavController:(YImagePickerNavController *)navControlelr DidFinshed:(NSMutableArray *)selectedArray
-{
-    [SVProgressHUD showWithStatus:@"正在加载"];
-    if (selectedArray.count) {
-        
-        for (int i = 0; i< selectedArray.count; i++) {
-           
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.01f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                YImageModel *photoa = selectedArray[i];
-                
-                [[YImageManager manager] getPhotoWithAsset:photoa.assets photoWidth:150 isSynchronous:YES completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
-                    
-                    __block  UIImage *thuImage =photo;
-                    
-                    [[YImageManager manager] getPhotoWithAsset:photoa.assets photoWidth:[UIScreen mainScreen].bounds.size.width isSynchronous:YES completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
-                        
-                        UIImage *tempImage = photo;
-                        
-                        if (tempImage || thuImage) {
-                            NSArray *aa = [NSArray arrayWithObjects:tempImage?:thuImage,thuImage?:tempImage,nil];
-                            
-                            [self didsendMessages:aa];
-                        }
- 
-                        if (i == selectedArray.count - 1) {
-                            
-                            [SVProgressHUD dismiss];
-                            
-                            [self dismissViewControllerAnimated:YES completion:nil];
-                        }
-                    }];
-                }];
-            });
-        }
-    }else
-    {
-//        [SVProgressHUD dismiss];
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
-}
-
 
 - (void)refreshInputviewSize:(CGSize)newSize {
     
