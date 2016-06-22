@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'GCMessageKit/Controller/*'
     ss.dependency 'GCMessageKit/ModelView'
     ss.dependency 'GCMessageKit/MessageModel'
+    ss.dependenct 'GCMessageKit/MessageCell'
     ss.frameworks = 'MediaPlayer'
     end
 
@@ -45,6 +46,7 @@ Pod::Spec.new do |s|
 
     s.subspec 'Macro' do |ss|
     ss.source_files = 'GCMessageKit/Macro/*'
+    ss.dependency 'GCMessageKit/Category'
     end
 
     s.subspec 'MessageCell' do |ss|
