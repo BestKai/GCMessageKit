@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'GCMessageKit'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.license      = 'LICENSE'
   s.homepage     = 'https://github.com/BestKai/GCMessageKit'
   s.authors      = { 'BestKai' => 'bestkai9009@gmail.com' }
@@ -66,7 +66,6 @@ Pod::Spec.new do |s|
     ss.dependency 'GCMessageKit/CommonHelper'
 
     end
-  s.resources = 'GCMessageKit/resource'
   s.frameworks   = 'UIKit','Foundation'
   s.requires_arc = true
   
